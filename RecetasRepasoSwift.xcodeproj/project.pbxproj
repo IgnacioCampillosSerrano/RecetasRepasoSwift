@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,13 @@
 		942E92682B612AE000775C12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 942E92662B612AE000775C12 /* LaunchScreen.storyboard */; };
 		942E92732B612AE000775C12 /* RecetasRepasoSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E92722B612AE000775C12 /* RecetasRepasoSwiftTests.swift */; };
 		942E927E2B612AE000775C12 /* RecetasRepasoSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E927D2B612AE000775C12 /* RecetasRepasoSwiftUITests.swift */; };
+		942E92902B612B3900775C12 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 942E928F2B612B3900775C12 /* Alamofire */; };
+		942E92962B612B7000775C12 /* AlamofireImage in Frameworks */ = {isa = PBXBuildFile; productRef = 942E92952B612B7000775C12 /* AlamofireImage */; };
+		942E929C2B612C7F00775C12 /* modelos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E929B2B612C7F00775C12 /* modelos.swift */; };
+		942E92A52B612CC500775C12 /* ApiConexiones.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E92A42B612CC500775C12 /* ApiConexiones.swift */; };
+		942E92AB2B61335A00775C12 /* CeldaCategoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E92AA2B61335A00775C12 /* CeldaCategoriesTableViewCell.swift */; };
+		942E92B02B6143A200775C12 /* MealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942E92AF2B6143A200775C12 /* MealsViewController.swift */; };
+		946B0DE82B628E1F00E24D8A /* RecetaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 946B0DE72B628E1F00E24D8A /* RecetaViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +56,11 @@
 		942E92792B612AE000775C12 /* RecetasRepasoSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RecetasRepasoSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		942E927D2B612AE000775C12 /* RecetasRepasoSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetasRepasoSwiftUITests.swift; sourceTree = "<group>"; };
 		942E927F2B612AE000775C12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		942E929B2B612C7F00775C12 /* modelos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelos.swift; sourceTree = "<group>"; };
+		942E92A42B612CC500775C12 /* ApiConexiones.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiConexiones.swift; sourceTree = "<group>"; };
+		942E92AA2B61335A00775C12 /* CeldaCategoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaCategoriesTableViewCell.swift; sourceTree = "<group>"; };
+		942E92AF2B6143A200775C12 /* MealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsViewController.swift; sourceTree = "<group>"; };
+		946B0DE72B628E1F00E24D8A /* RecetaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecetaViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				942E92902B612B3900775C12 /* Alamofire in Frameworks */,
+				942E92962B612B7000775C12 /* AlamofireImage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -99,6 +113,9 @@
 		942E925A2B612ADF00775C12 /* RecetasRepasoSwift */ = {
 			isa = PBXGroup;
 			children = (
+				942E92A92B61330A00775C12 /* controllers */,
+				942E92A32B612CB800775C12 /* conexiones */,
+				942E929A2B612C6E00775C12 /* modelos */,
 				942E925B2B612ADF00775C12 /* AppDelegate.swift */,
 				942E925D2B612ADF00775C12 /* SceneDelegate.swift */,
 				942E925F2B612ADF00775C12 /* ViewController.swift */,
@@ -128,6 +145,32 @@
 			path = RecetasRepasoSwiftUITests;
 			sourceTree = "<group>";
 		};
+		942E929A2B612C6E00775C12 /* modelos */ = {
+			isa = PBXGroup;
+			children = (
+				942E929B2B612C7F00775C12 /* modelos.swift */,
+			);
+			path = modelos;
+			sourceTree = "<group>";
+		};
+		942E92A32B612CB800775C12 /* conexiones */ = {
+			isa = PBXGroup;
+			children = (
+				942E92A42B612CC500775C12 /* ApiConexiones.swift */,
+			);
+			path = conexiones;
+			sourceTree = "<group>";
+		};
+		942E92A92B61330A00775C12 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				942E92AA2B61335A00775C12 /* CeldaCategoriesTableViewCell.swift */,
+				942E92AF2B6143A200775C12 /* MealsViewController.swift */,
+				946B0DE72B628E1F00E24D8A /* RecetaViewController.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -144,6 +187,10 @@
 			dependencies = (
 			);
 			name = RecetasRepasoSwift;
+			packageProductDependencies = (
+				942E928F2B612B3900775C12 /* Alamofire */,
+				942E92952B612B7000775C12 /* AlamofireImage */,
+			);
 			productName = RecetasRepasoSwift;
 			productReference = 942E92582B612ADF00775C12 /* RecetasRepasoSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +262,10 @@
 				Base,
 			);
 			mainGroup = 942E924F2B612ADF00775C12;
+			packageReferences = (
+				942E928E2B612B3900775C12 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				942E92942B612B7000775C12 /* XCRemoteSwiftPackageReference "AlamofireImage" */,
+			);
 			productRefGroup = 942E92592B612ADF00775C12 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -258,9 +309,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				946B0DE82B628E1F00E24D8A /* RecetaViewController.swift in Sources */,
 				942E92602B612ADF00775C12 /* ViewController.swift in Sources */,
+				942E92AB2B61335A00775C12 /* CeldaCategoriesTableViewCell.swift in Sources */,
 				942E925C2B612ADF00775C12 /* AppDelegate.swift in Sources */,
+				942E92A52B612CC500775C12 /* ApiConexiones.swift in Sources */,
+				942E92B02B6143A200775C12 /* MealsViewController.swift in Sources */,
 				942E925E2B612ADF00775C12 /* SceneDelegate.swift in Sources */,
+				942E929C2B612C7F00775C12 /* modelos.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +643,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		942E928E2B612B3900775C12 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+		942E92942B612B7000775C12 /* XCRemoteSwiftPackageReference "AlamofireImage" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/AlamofireImage.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		942E928F2B612B3900775C12 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 942E928E2B612B3900775C12 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		942E92952B612B7000775C12 /* AlamofireImage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 942E92942B612B7000775C12 /* XCRemoteSwiftPackageReference "AlamofireImage" */;
+			productName = AlamofireImage;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 942E92502B612ADF00775C12 /* Project object */;
 }
